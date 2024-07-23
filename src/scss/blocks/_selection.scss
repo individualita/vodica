@@ -1,0 +1,109 @@
+.selection {
+    padding: 30px 0 100px;
+    @include mobile {
+        padding: 30px 0 70px;
+    }
+    @include small-mobile {
+        padding: 30px 0 100px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    &__controls {
+        display: flex;
+        align-items: center;
+        gap: 40px; 
+        color: var(--main-color);
+        font-size: 18px;
+        @include mobile {
+            justify-content: center;
+            gap: 10px;
+        }
+        @include small-mobile {
+            justify-content: space-between;
+            gap: 0;
+        }
+    }
+
+    &__content {
+        position: relative;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        &.active {
+            display: block;
+            opacity: 1;
+        }
+    }
+
+    &__img {
+        position: relative;
+        width: 900px;
+        height: 470px;
+        @include laptop {
+            width: 750px;
+            height: 440px;
+        }
+        @include tablet {
+            width: 720px;
+            height: 410px;
+        }
+        @include mobile {
+            width: 450px;
+            height: 250px;
+            margin: 0 auto;
+        }
+        @include small-mobile {
+            width: 360px;
+            height: 185px;
+        }
+
+    }
+
+    &__descr {
+        position: absolute;
+        top: 30%;
+        right: 80px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 615px;
+        backdrop-filter: blur(6px);
+        @include mobile {
+            width: 350px;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            font-size: 12px;
+            right: auto;
+            left: 10%;
+        }
+        @include small-mobile {
+            width: 280px;
+            left: 0;
+            top: 50%;
+            font-size: 10px;
+            
+        }
+    }
+
+    &__characteristics {
+        margin-top: 40px;
+        @include mobile {
+            margin-top: 30px;
+        }
+        &-title {
+            font-size: 16px;
+        }
+        &-list {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+}
+
+

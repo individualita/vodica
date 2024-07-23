@@ -1,0 +1,40 @@
+{
+  "menu": [
+    {
+      "src": "./img/order/cardbottle.png",
+      "alt": "Carbonated bottle Water",
+      "type": "Carbonated Water",
+      "seller": "",
+      "price": 0.75,
+      "id": "1"
+    },
+    {
+      "src": "./img/order/cardbottle.png",
+      "alt": "drinking bottle Water ",
+      "type": "Drinking Water",
+      "seller": "TOP SELLER",
+      "price": 0.86,
+      "id": "2"
+    },
+    {
+      "src": "./img/order/cardbottle.png",
+      "alt": "mineral bottle Water",
+      "type": "Mineral Water",
+      "seller": "",
+      "price": 0.99,
+      "id": "3"
+    }
+  ],
+  "requests": [
+    {
+      "id": "8389",
+      "name": "hgygy",
+      "phone": "+7 (123) 123-12-31"
+    },
+    {
+      "id": "2fe5",
+      "name": "123123",
+      "phone": "+7 (234) 324-32-42"
+    }
+  ]
+}

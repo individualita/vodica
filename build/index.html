@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vodica</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<div class="navbar" id="navbar">
+			<div class="container">
+				<div class="navbar__wrapper">
+					<button class="navbar__burger" type="button" aria-label="Open menu">
+						<span></span>
+					</button>
+					<div class="navbar__brand">Vodica</div>
+					<button class="button button-primary navbar__button" type="button" data-scroll aria-label="Pre-order Vodica">Pre-Order</button>
+				</div>
+			</div>
+			<div class="navbar__menu">
+				<div class="navbar__menu-title">Menu</div>
+				<button class="navbar__close">[x]</button>
+				<ul class="navbar__list">
+					<li class="navbar__item">
+						<a class="navbar__link" href="#offer" aria-label="Learn what we offer">what we&#160;offer</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="#facts" aria-label="Discover fun facts">fun facts</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="#calculator" calculator aria-label="Use the calculator">calculator</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="#order" aria-label="Make an order online">make an&#160;order</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="#promotion" aria-label="View current promotions">promotion</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="#callback" aria-label="Contact us for more information">contact us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<section class="preview" id="preview">
+			<div class="container">
+				<div class="preview__wrapper">
+					<h1 class="preview__title title">Nature&#8217;s Best Delivered to&#160;Your Door</h1>
+					<div class="preview__subtitle">Freshness. Health. <span>Beauty.</span></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="offer" id="offer">
+			<div class="container">
+				<div class="offer__inner">
+					<h2 class="offer__title title">What can we&#160;offer you?</h2>
+					<p class="offer__descr">
+						We&#160;strive to&#160;provide you with clean and eco-friendly high-quality water delivered right to&#160;your home. Our mission is&#160;to&#160;make your
+						life more comfortable and healthier by&#160;offering a&#160;wide selection of&#160;water to&#160;meet all your needs.
+					</p>
+					<button class="offer__button button button-secondary" type="button" data-modal aria-label="contact us">Contact us</button>
+				</div>
+			</div>
+		</section>
+		<section class="selection" id="selection">
+			<div class="container">
+				<div class="selection__wrapper">
+					<div class="selection__controls">
+						<button class="selection__control button button-dot" data-tab="#drinking">Drinking Water</button>
+						<button class="selection__control button button-dot active" data-tab="#carbonated">Carbonated Water</button>
+						<button class="selection__control button button-dot" data-tab="#mineral">Mineral Water</button>
+					</div>
+
+					<div class="selection__content " id="drinking">
+						<picture>
+							<source srcset="./img/selection/glass.webp 1x, ./img/selection/glass@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/selection/glass.png 1x, ./img/selection/glass@2x.png 2x" type="image/png" />
+							<img class="selection__img" src="./img/selection/glass.png" alt="glass of water on a grey background" />
+						</picture>
+						<div class="selection__descr ">
+							<div class="selection__text">
+								Our drinking water undergoes thorough purification and meets all safety standards. It&#160;is&#160;ideal for daily consumption, quenching your thirst,
+								and keeping your body in&#160;good condition.
+							</div>
+							<div class="selection__characteristics">
+								<div class="selection__characteristics-title">Characteristics:</div>
+
+								<ul class="selection__characteristics-list">
+									<li class="selection__characteristics-item">High level of&#160;purity</li>
+									<li class="selection__characteristics-item">Neutral taste</li>
+									<li class="selection__characteristics-item">Suitable for cooking and beverages</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="selection__content" id="mineral">
+						<picture>
+							<source srcset="./img/selection/mineral.webp 1x, ./img/selection/mineral@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/selection/mineral.png 1x, ./img/selection/mineral@2x.png 2x" type="image/png" />
+							<img class="selection__img" src="./img/selection/mineral.png" alt="bottles with mineral water" />
+						</picture>
+						<div class="selection__descr ">
+							<div class="selection__text">
+								Mineral water, enriched with natural minerals, is&#160;sourced from environmentally clean springs. It&#160;helps maintain mineral balance in&#160;the
+								body and contributes to&#160;overall well-being.
+							</div>
+							<div class="selection__characteristics">
+								<div class="selection__characteristics-title">Characteristics:</div>
+
+								<ul class="selection__characteristics-list">
+									<li class="selection__characteristics-item">Rich in&#160;beneficial minerals such as&#160;calcium and magnesium</li>
+									<li class="selection__characteristics-item">Natural origin</li>
+									<li class="selection__characteristics-item">Suitable for regular consumption</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="selection__content active " id="carbonated">
+						<picture>
+							<source srcset="./img/selection/lemon.webp 1x, ./img/selection/lemon@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/selection/lemon.png 1x, ./img/selection/lemon@2x.png 2x" type="image/png" />
+							<img class="selection__img" src="./img/selection/lemon.png" alt="Yellow lemon against a water background" />
+						</picture>
+						<div class="selection__descr ">
+							<div class="selection__text">
+								Refreshing carbonated water is&#160;perfect for those who enjoy bubbles and a&#160;light, invigorating taste. It&#160;can be&#160;enjoyed on&#160;its
+								own or&#160;used as&#160;a&#160;base for cocktails.
+							</div>
+							<div class="selection__characteristics">
+								<div class="selection__characteristics-title">Characteristics:</div>
+
+								<ul class="selection__characteristics-list">
+									<li class="selection__characteristics-item">Lightly carbonated taste</li>
+									<li class="selection__characteristics-item">Quenches thirst</li>
+									<li class="selection__characteristics-item">Great choice for entertainment and celebrations</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="facts" id="facts">
+			<div class="container">
+				<h2 class="facts__title title">Three interesting facts about water:</h2>
+
+				<div class="facts__wrapper">
+					<div class="facts__info">
+						<p class="facts__description">
+							Water&#160;&#8212; an&#160;amazing solvent: Water is&#160;one of&#160;the best solvents on&#160;the planet. It&#160;has the ability to&#160;dissolve
+							a&#160;wide variety of&#160;substances, making it&#160;essential for all life forms on&#160;Earth.
+						</p>
+						<p class="facts__description">
+							Unique chemical compound: Despite being composed of&#160;just two hydrogen atoms and one oxygen atom (H2O), water&#8217;s unique properties such
+							as&#160;high surface tension and high heat capacity play a&#160;crucial role in&#160;life on&#160;Earth.
+						</p>
+						<p class="facts__description">
+							Endless water cycle: Water on&#160;Earth continually circulates through the hydrogen-oxygen cycle, transitioning between liquid and vapor states. This
+							cycle not only sustains the climate but also ensures water availability for living organisms
+						</p>
+					</div>
+
+					<div class="facts__slider">
+						<div class="facts__slider-wrapper">
+							<div class="facts__slider-inner">
+								<div class="facts__slide show">
+									<picture>
+										<source srcset="./img/facts/hand.webp 1x, ./img/facts/hand@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/facts/hand.png 1x, ./img/facts/hand@2x.png 2x" type="image/png" />
+										<img src="./img/facts/hand.png" alt="A woman's hand touches the water" />
+									</picture>
+								</div>
+
+								<div class="facts__slide show">
+									<picture>
+										<source srcset="./img/facts/liq.webp 1x, ./img/facts/liq@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/facts/liq.png 1x, ./img/facts/liq@2x.png 2x" type="image/png" />
+										<img src="./img/facts/liq.png" alt="water droplets on a gray background" />
+									</picture>
+								</div>
+
+								<div class="facts__slide show">
+									<picture>
+										<source srcset="./img/facts/earth.webp 1x, ./img/facts/earth@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/facts/earth.png 1x, ./img/facts/earth@2x.png 2x" type="image/png" />
+										<img src="./img/facts/earth.png" alt="top view of our Earth" />
+									</picture>
+								</div>
+							</div>
+						</div>
+
+						<div class="facts__slider-counter">
+							<button class="facts__slider-prev">
+								<svg class="icon icon--arrow-left">
+									<use href="./img/svgsprite/sprite.symbol.svg#arrow-left"></use>
+								</svg>
+							</button>
+							<span id="current">01</span>
+							/
+							<span id="total">03</span>
+							<button class="facts__slider-next">
+								<svg class="icon icon--arrow-right">
+									<use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="calculator" id="calculator">
+			<div class="container">
+				<h2 class="title calculator__title">Calculate your water needs</h2>
+
+				<p class="calculator__description">
+					Drinking your daily water norm is&#160;essential for regulating body temperature, aiding digestion, and maintaining healthy skin. Proper hydration also enhances
+					cognitive function, physical performance, and overall well-being by&#160;flushing toxins and supporting nutrient absorption.
+				</p>
+
+				<div class="calculator__wrapper">
+					<div class="calculator__action">
+						<div class="calculator__group calculator__group-gender" id="gender">
+							<div class="calculator__group-title">Your gender</div>
+							<div class="calculator__buttons">
+								<button id="male" class="calculator__button button button-dot-border" type="button" aria-label="choose male gender">Male</button>
+								<button id="female" class="calculator__button button button-dot-border active" type="button" aria-label="choose female gender">Female</button>
+							</div>
+						</div>
+
+						<div class="calculator__group calculator__group-height">
+							<div class="calculator__group-title">Your height</div>
+							<input type="text" id="height" class="calculator__input" placeholder="cm" />
+						</div>
+
+						<div class="calculator__group calculator__group-weight">
+							<div class="calculator__group-title">Current weight</div>
+							<input type="text" id="weight" class="calculator__input" placeholder="kg" />
+						</div>
+
+						<div class="calculator__group calculator__group-activity" id="activity">
+							<div class="calculator__group-title">Physical activity</div>
+
+							<div class="calculator__buttons">
+								<button id="low" class="calculator__button button button-dot-border active" data-ratio="1.0" type="button" aria-label="choose Low activity">
+									Low activity
+								</button>
+								<button id="light" class="calculator__button button button-dot-border" data-ratio="1.2" type="button" aria-label="choose Light activity">
+									Light activity
+								</button>
+								<button id="moderate" class="calculator__button button button-dot-border" data-ratio="1.4" type="button" aria-label="choose Moderate activity">
+									Moderate activity
+								</button>
+								<button id="high" class="calculator__button button button-dot-border" data-ratio="1.6" type="button" aria-label="choose high activity">
+									High activity
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="calculator__result">
+						<span class="calculator__result-text">Your result</span>
+						<span class="calculator__result-value"> ml</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="order" id="order">
+			<div class="container">
+				<h1 class="title order__title">Make an&#160;Order</h1>
+
+				<!-- JS RENDER from db.json, function cards()-->
+				<div class="order__cards">
+					<div class="order__card order__card-carbonated">
+						<picture>
+							<source srcset="./img/order/cardbottle.webp 1x, ./img/order/cardbottle@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/order/cardbottle.png 1x, ./img/order/cardbottle@2x.png 2x" type="image/png" />
+							<img class="order__card-image" src="./img/order/cardbottle.png" alt="Carbonated bottle Water" />
+						</picture>
+						<div class="order__card-content">
+							<div class="order__card-descr">
+								<div class="order__card-type">Carbonated Water</div>
+								<div class="order__card-price">from:<span> 0.75$</span></div>
+							</div>
+
+							<div class="order__card-buttons">
+								<div class="order__quantity">
+									<button id="minus" class="order__quantity-button" type="button" aria-label="deduct quantity">-</button>
+									<span class="order__quantity-number">1</span>
+									<button id="plus" class="order__quantity-button" type="button" aria-label="add quantity">+</button>
+								</div>
+
+								<button class="order__card-button" type="button">Buy now</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="order__card order__card-topseller">
+						<picture>
+							<source srcset="./img/order/cardbottle.webp 1x, ./img/order/cardbottle@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/order/cardbottle.png 1x, ./img/order/cardbottle@2x.png 2x" type="image/png" />
+							<img class="order__card-image" src="./img/order/cardbottle.png" alt="drinking bottle Water" />
+						</picture>
+						<div class="order__card-content">
+							<div class="order__card-descr">
+								<div class="order__card-top">top seller</div>
+								<div class="order__card-type">Drinking Water</div>
+								<div class="order__card-price">from:<span> 0.86$</span></div>
+							</div>
+
+							<div class="order__card-buttons">
+								<div class="order__quantity">
+									<button id="minus" class="order__quantity-button" type="button" aria-label="deduct quantity">-</button>
+									<span class="order__quantity-number">1</span>
+									<button id="plus" class="order__quantity-button" type="button" aria-label="add quantity">+</button>
+								</div>
+
+								<button class="order__card-button" type="button">Buy now</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="order__card order__card-mineral">
+						<picture>
+							<source srcset="./img/order/cardbottle.webp 1x, ./img/order/cardbottle@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/order/cardbottle.png 1x, ./img/order/cardbottle@2x.png 2x" type="image/png" />
+							<img class="order__card-image" src="./img/order/cardbottle.png" alt="mineral bottle Water" />
+						</picture>
+						<div class="order__card-content">
+							<div class="order__card-descr">
+								<div class="order__card-type">Mineral Water</div>
+								<div class="order__card-price">from:<span> 0.99$</span></div>
+							</div>
+
+							<div class="order__card-buttons">
+								<div class="order__quantity">
+									<button id="minus" class="order__quantity-button" type="button" aria-label="deduct quantity">-</button>
+									<span class="order__quantity-number">1</span>
+									<button id="plus" class="order__quantity-button" type="button" aria-label="add quantity">+</button>
+								</div>
+
+								<button class="order__card-button" type="button">Buy now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="callback" id="callback">
+			<div class="container">
+				<h2 class="callback__title title">Experience the purity&#160;&#8212; place your first order of&#160;eco-friendly water today!</h2>
+
+				<form action="#" class="callback__form">
+					<div class="callback__form-group">
+						<input required placeholder="Your name" name="name" type="text" class="callback__input callback__input-name" />
+						<input required placeholder="Your phone number" name="phone" type="tel" class="callback__input callback__input-number" />
+					</div>
+					<picture>
+						<source srcset="./img/callback/arrow.webp 1x, ./img/callback/arrow@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/callback/arrow.png 1x, ./img/callback/arrow@2x.png 2x" type="image/png" />
+						<img class="callback__img" src="./img/callback/arrow.png" alt="blue arrow right" />
+					</picture>
+					<button class="callback__button" type="button" data-modal aria-label="call back">get a&#160;call!</button>
+				</form>
+			</div>
+		</section>
+		<section class="promotion" id="promotion">
+			<div class="container">
+				<div class="promotion__wrapper">
+					<div class="promotion__info">
+						<h3 class="promotion__title">Promotion for new customers</h3>
+						<p class="promotion__descr">
+							We&#160;know how important it&#160;is&#160;to&#160;maintain water balance, especially on&#160;hot summer days. We&#160;are confident that with our water,
+							your routine will become even more beneficial! We&#160;value each customer and offer you the opportunity to&#160;become one on&#160;very favorable terms.
+							We&#160;provide a&#160;20% discount on&#160;orders of&#160;3 or&#160;more bottles!
+						</p>
+					</div>
+
+					<div class="promotion__timer">
+						<div class="promotion__subtitle">Until the end of&#160;the promotion</div>
+
+						<div class="promotion__timer-group">
+							<div class="promotion__timer-block">
+								<span id="days">____</span>
+								days
+							</div>
+							<div class="promotion__timer-block">
+								<span id="hours">____</span>
+								hours
+							</div>
+							<div class="promotion__timer-block">
+								<span id="minutes">____</span>
+								minutes
+							</div>
+							<div class="promotion__timer-block">
+								<span id="seconds">____</span>
+								seconds
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer" id="#footer">
+			<div class="container">
+				<div class="footer__content">
+					<svg class="icon icon--drop">
+						<use href="./img/svgsprite/sprite.symbol.svg#drop"></use>
+					</svg>
+					<div class="footer__title">We&#160;are on&#160;social media</div>
+					<a href="#" class="footer__link" aria-label="link to our instagram page">Instagram</a>
+					<a href="#" class="footer__link" aria-label="link to our facebook page">Facebook</a>
+					<div class="footer__number">+48 xxx xxx xxx</div>
+					<div class="footer__rights">developed by&#160;<a href="https://individualita.github.io/" target="_blank">Roman .K</a></div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="modal" id="modal">
+			<div class="modal__window">
+				<div class="modal__content">
+					<form class="modal__form" action="#">
+						<button class="modal__close" data-close type="button">X</button>
+						<div class="modal__title">We&#160;will contact you as&#160;soon as&#160;possible</div>
+
+						<input class="modal__input" type="text" id="name" name="name" required placeholder="Enter your name" />
+						<input class="modal__input" type="tel" id="phone" name="phone" required placeholder="Enter your phone number" />
+						<button class="modal__button" type="submit" aria-label="сlose">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- -->
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

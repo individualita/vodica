@@ -1,0 +1,28 @@
+:root {
+	--container-width: 1310px;
+	--container-padding: 15px;
+
+	--font-main: 'Open Sans', sans-serif;
+	--font-accent: 'Manrope', sans-serif;
+	--font-titles: var(--font-accent);
+
+	--page-bg: linear-gradient(180deg, #cae8ff 0%, #e1e8ed 12.69%);
+	--text-color: #354242;
+	--main-color: #0c1f63;
+	--support-color: #013F0F;
+
+	--accent: #FF0000;
+	--link-color: #2578c8;
+
+
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}	
+
+//
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}

@@ -1,0 +1,199 @@
+.navbar {
+    position: relative;
+    padding-top: 60px;
+    @include mobile {
+        padding-top: 35px;
+    }
+    @include small-mobile {
+        padding-top: 20px;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 900px;
+        background: url('./../../img/preview/bubbles.png') no-repeat center center / cover;
+        mix-blend-mode:multiply;
+        opacity: 0.7;
+        z-index: -1;
+        @include mobile {
+            height: 600px;
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        @include mobile {
+            grid-template-columns: 1fr;
+            justify-items: center; 
+            row-gap: 30px;
+        }
+        @include small-mobile {
+            row-gap: 25px;
+        }
+    }
+
+    &__burger {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 25px;
+        @include mobile {
+            width: 35px;
+            height: 20px;
+            justify-self:left
+        }
+        @include small-mobile {
+            width: 30px;
+            height: 15px;
+        }
+        cursor: pointer;
+        & > span {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--text-color);
+            transform:translateY(-50%);
+            transition: width 0.4s ease;
+
+        }
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            transition: all 0.4s ease 0s;
+            width: 40px;
+            height: 2px;
+            background-color: var(--text-color);
+            left: 0;
+            right: 0;
+            @include mobile {
+                width: 25px;
+            }
+        }
+        &::before {
+            top: 0;
+
+        }
+        &::after {
+            bottom: 0;
+
+        }
+        &:hover {
+            & > span {
+                width: 40%;
+            }
+        }
+        &-active {
+            & > span {
+                width: 40%;
+            }
+        }
+    }
+
+    &__brand {
+        font-size: 64px;
+        font-weight: 300;
+        color: var(--main-color);
+        letter-spacing: 0.3em;
+        @include mobile {
+            font-size: 50px;
+        }
+        @include small-mobile {
+            font-size: 36px;
+        }
+    }
+
+    &__button {
+        margin-left: auto;
+        @include mobile {
+            margin-left: 0;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        font-size: 22px;
+        color: var(--text-color);
+        top: 30px;
+        right: 40px;
+    }
+
+    &__menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        padding-top: 80px;
+        width: 300px;
+        height: 100vh;
+        backdrop-filter: blur(4px);
+        transform: translateX(-100%);
+        transition: transform .4s ease-in-out;
+        &-opened {
+            transform: translateX(0);
+            @include small-mobile {
+                backdrop-filter: blur(5px);
+            }
+        }
+        &-title {
+            font-weight: 300;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 36px;
+            line-height: 54px;
+            letter-spacing: 0.03em;
+            @include small-mobile {
+                line-height: normal;
+            }
+        }
+    }
+
+    &__list {
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        font-size: 16px;
+        text-transform: uppercase;
+        @include mobile {
+            text-align: center;
+            gap: 25px;
+        }
+        @include small-mobile {
+            padding-top: 40px;
+            gap: 20px;
+        }
+        
+    }
+
+    &__item {
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    &__link {
+        display: block;
+        color: var(--text-color);
+        transition: border 0.3s ease-in-out;
+        padding: 10px;
+        border: 1px solid transparent;
+        border-radius: 25px;
+        @include mobile {
+            width: 100%;
+            font-weight: 500;
+        }
+        &:hover {
+            border: 1px solid var(--main-color);
+        }
+    }
+}

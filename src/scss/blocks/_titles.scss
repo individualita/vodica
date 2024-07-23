@@ -1,0 +1,11 @@
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    @include mobile {
+        font-size: 32px;
+    }
+    @include small-mobile {
+        font-size: 24px;
+    }
+}

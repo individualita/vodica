@@ -1,0 +1,97 @@
+.preview {
+    height: 720px;
+    position: relative;
+    @include mobile {
+        height: 600px;
+    }
+    @include small-mobile {
+        height: 520px;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 180px;
+        height: 550px;
+        background: url('./../../img/preview/preview-bottle.png') no-repeat center / cover;
+        z-index: -1;
+        @include mobile {
+            height: 505px;
+        }
+        @include small-mobile {
+            background: url('./../../img/preview/bottle-mobile.png') no-repeat center / cover;
+            height: 306px;
+            width: 91px;
+            bottom: auto;
+            top: 30px;
+        }
+    }
+    .container {
+        height: 100%;
+    }
+    
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        @include small-mobile {
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 35px;
+            padding-bottom: 30px;
+ 
+        }
+    }
+    
+    &__title {
+        align-self: flex-end;
+        padding-bottom: 120px;
+        width: 438px;
+        @include mobile {
+            width: auto;
+            padding-bottom: 60px;
+        }
+        @include small-mobile {
+            text-align: center;
+            padding-bottom: 0;
+            margin-top: 35px;
+            
+        }
+        
+    }
+
+    &__subtitle {
+        padding-top: 170px;
+        margin-right: 180px;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 0.03em;
+        color: var(--support-color);
+        line-height: 30px;
+
+        @include laptop {
+            margin-right: 100px;
+        }
+        @include tablet {
+            margin-right: 0;
+        }
+        @include small-mobile {
+            font-size: 12px;
+            padding-top: 0;
+            text-align: center;
+        }
+
+        & > span {
+            display: block;
+            text-align: center;
+            @include mobile {
+                text-align:left;
+            }
+            @include small-mobile {
+                display: inline;;
+            }
+        }
+    }
+}

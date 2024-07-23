@@ -1,0 +1,51 @@
+<section class="calculator" id="calculator">
+    <div class="container">
+        <h2 class="title calculator__title">Calculate your water needs</h2>
+
+        <p class="calculator__description">
+            Drinking your daily water norm is essential for regulating body temperature, aiding digestion, and maintaining healthy skin. Proper hydration also enhances cognitive function, physical performance, and overall well-being by flushing toxins and supporting nutrient absorption.
+        </p>
+    
+    
+        <div class="calculator__wrapper">
+    
+            <div class="calculator__action">
+    
+                <div class="calculator__group calculator__group-gender" id="gender">
+                    <div class="calculator__group-title">Your gender</div>
+                    <div class="calculator__buttons">
+                        <button id="male" class="calculator__button button button-dot-border" type="button"  aria-label="choose male gender">Male</button>
+                        <button id="female" class="calculator__button button button-dot-border active" type="button" aria-label="choose female gender">Female</button>
+                    </div>
+                </div>
+                
+                <div class="calculator__group calculator__group-height">
+                    <div class="calculator__group-title">Your height</div>
+                    <input type="text" id="height" class="calculator__input" placeholder="cm">
+                </div>
+        
+                <div class="calculator__group calculator__group-weight">
+                    <div class="calculator__group-title">Current weight</div>
+                    <input type="text" id="weight" class="calculator__input" placeholder="kg">
+                </div>
+    
+                <div class="calculator__group calculator__group-activity" id="activity">
+                    <div class="calculator__group-title">Physical activity</div>
+    
+                    <div class="calculator__buttons">
+                        <button id="low" class="calculator__button button button-dot-border active" data-ratio="1.0" type="button"  aria-label="choose Low activity">Low activity</button>
+                        <button id="light" class="calculator__button button button-dot-border" data-ratio="1.2" type="button"  aria-label="choose Light activity">Light activity</button>
+                        <button id="moderate" class="calculator__button button button-dot-border" data-ratio="1.4" type="button"  aria-label="choose Moderate activity">Moderate activity</button>
+                        <button id="high" class="calculator__button button button-dot-border" data-ratio="1.6" type="button"  aria-label="choose high activity">High activity</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="calculator__result">
+                <span class="calculator__result-text">Your result</span>
+                <span class="calculator__result-value"> ml</span>
+            </div>
+            
+        </div>
+    </div>
+</section>
