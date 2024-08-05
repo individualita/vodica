@@ -12,6 +12,7 @@
         top: 0;
         width: 580px;
         height: 638px;
+        z-index: -1;
         @include tablet {
             top: 20%;
             width: 510px;
